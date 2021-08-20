@@ -56,5 +56,9 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
 2. What does `bcryptjs` do to help us store passwords in a secure manner?
-3. How are unit tests different from integration and end-to-end testing?
-4. How does _Test Driven Development_ change the way we write applications and tests?
+  bcryptjs helps us to store passwords in a hashed manner so they are harder to decrypt.
+4. How are unit tests different from integration and end-to-end testing?
+  Unit tests are testing for specific parts of the cade to maek sure that they run and function on there own. Intergration is to see and make sure that certain aspets work together and end-to-end is for everything in the app.
+6. How does _Test Driven Development_ change the way we write applications and tests?
+  TDD changes the way we write code because we are writing the test first so that it fails. Then we write the code that is needed to make the test pass in the 
+  manner that we want. 
