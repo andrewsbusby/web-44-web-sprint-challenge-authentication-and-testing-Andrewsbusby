@@ -13,13 +13,15 @@ function findBy(filter) {
 }
 
 async function add (user) {
-    const [id] = await db('users').insert(user)
+    const [id] = await db('users').select('id', 'username', 'password').insert(user)
     return findById(id)
 }
+
+
 
 module.exports = {
     add,
     findById,
     findBy,
-    find
+    find,
 }

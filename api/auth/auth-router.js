@@ -17,10 +17,10 @@ router.post('/register', mw.checkUsernameFree, (req, res, next) => {
 
 });
 
-router.post('/login', mw.checkUsernameExists, (req, res, next) => {
+router.post('/login',  (req, res, next) => {
   if (bcrypt.compareSync( req.body.password, req.useranme.password )) {
     const token = buildToken(req.user)
-    res.json({
+    res.status(200).json({
       message: `Welcome, ${req.user.username}`, 
       token,
     })
