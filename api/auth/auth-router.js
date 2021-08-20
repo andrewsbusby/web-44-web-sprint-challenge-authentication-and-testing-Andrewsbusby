@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const restrict = require('../middleware/restricted');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { JWT_SECRET } = require('../secret/secrec');
